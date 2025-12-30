@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Sizing and Display property</title>
+
+    <style>
+      *{
+            padding: 0;
+            box-sizing: border-box;
+        } 
+
+        .box{
+            /* display: inline; */
+            width: 300px;
+            height: 200px;
+            border: 1px solid black;
+            padding: 90px;
+        }
+
+        span{
+            border: 2px solid green;
+            width: 400px;
+            height: 200px;
+            margin: 10px;
+            padding: 100px;
+            display: inline-block;
+            /* display: block; */
+        }
+
+        /* div{
+            border:1px solid red;
+            width: 300px;
+            height: 300px;
+            margin: 25px;
+            padding: 50px;
+            padding-left: 150px;
+        } */
+
+        table{
+            border: 2px solid black;
+            border-collapse: collapse;
+        }
+        td{
+            border: 2px solid black;
+            padding: 10px;
+            text-align: center;
+        }
+        th{
+            text-align: right;
+        }
+        .firstheader{
+            font-weight: bold;
+            background-color: lightgray;
+        }
+    </style>
+
+</head>
+<body>
+
+    <!-- <div>
+        Welcome to CodeHelp
+    </div>
+
+    <div>
+        Weclcome to CodeHelp 2.0
+    </div> -->
+
+    <div class="box">Welcome to CodeHelp</div>
+
+    <span>This is Love Babbar</span>
+    <span>This is Love Babbar 2.0</span>
+
+    <p> "Display: inline-block;" It will behave like a inline element but in addition we can apply custom weight and height. <br>
+        Inline elements are displayed on the same line(Span). <br>
+        Inline elements (Span) will not take width and height properties. It will use content width. And we can't use custom margin in case of inline elements. </p>
+    <br>
+
+    <h2>Difference Between Block and Inline Elements</h2>
+
+    <table>
+    
+        <tr>
+            <td></td>
+            <td class="firstheader">Block Elements</td>
+            <td class="firstheader">Inline Elements</td>
+        </tr>
+        <tr>
+            <td>1.</td>
+            <td>Try to render in new line.</td>
+            <td>Try to render in same line.</td>
+        </tr>
+        <tr>
+            <td>2.</td>
+            <td>By Default it will take width extreme left and extreme right.</td>
+            <td>It's width depends on content width. It will take the content width.</td>
+        </tr>
+        <tr>
+            <td>3.</td>
+            <td>Here we can apply custom width and height.</td>
+            <td>Here we can't apply custom width and height.</td>
+        </tr>
+        <tr>
+            <td>4.</td>
+            <td>Here we can apply margin and padding.</td>
+            <td>Here we can also apply margin and padding but only horizontally not vertically.</td>
+        </tr>
+    </table>
+
+    <div>Note: You can change the display property of any element using CSS to make it behave like a block or inline element (We can change block elements into inline elements and vice versa).
+        <br>
+        Like we can change span to block using "display:block".
+    </div>
+    
+</body>
+</html>
