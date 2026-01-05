@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position Property</title>
+    <style>
+
+      body{
+        background-color: #777777;
+      }
+
+        /* * {
+  box-sizing: border-box;
+}
+
+.box {
+  width: 100px;
+  height: 100px;
+  background: red;
+  color: white;
+}
+
+#one {
+  position: fixed;
+  top: 80px;
+  left: 10px;
+  background: blue;
+}
+
+.outer {
+  width: 500px;
+  height: 300px;
+  overflow: scroll;
+  padding-left: 150px;
+}  */
+
+
+
+
+/* dl > div {
+  background: white;
+  padding-top: 24px;
+}
+
+dt {
+  background: #b8c1c8;
+  border-bottom: 1px solid #989ea4;
+  border-top: 1px solid #717d85;
+  color: white;
+  font:
+    bold 18px/21px "Helvetica",
+    "Arial",
+    sans-serif;
+  margin: 0;
+  padding: 2px 0 0 12px;
+  position: -webkit-sticky;
+  position: sticky;
+  top: -1px;
+}
+
+dd {
+  font:
+    bold 20px/45px "Helvetica",
+    "Arial",
+    sans-serif;
+  margin: 0;
+  padding-left: 12px;
+  white-space: nowrap;
+}
+
+dd + dd {
+  border-top: 1px solid #cccccc;
+} */
+
+
+
+
+
+/* body {
+  width: 500px;
+  margin: 0 auto;
+}
+
+p {
+  background: aqua;
+  border: 3px solid blue;
+  padding: 10px;
+  margin: 10px;
+}
+
+span {
+  background: red;
+  border: 1px solid black;
+}
+
+.positioned {
+  position: absolute;
+  background: yellow;
+  inset-block-start: 270px;
+  inset-inline-start: 180px;
+} */
+
+div{
+  border: 2px solid black;
+}
+
+img{
+  margin: 20px;
+}
+.image2{
+   /* position: relative;
+  top: 100px;
+  left: 200px;  */
+
+  position: absolute;
+  top: 100px;
+  left: 200px;
+}
+
+.container{
+  position: relative;
+  height: 2000px;
+}
+
+.image4{
+  position: fixed;
+}
+
+.image3{
+  position: sticky;
+  top: 100px;
+}
+
+
+    </style>
+</head>
+<body>
+     
+  <!-- <h1>This is position property</h1>
+
+
+    <div class="outer">
+  <p>
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam congue tortor
+    eget pulvinar lobortis. Vestibulum ante ipsum primis in faucibus orci luctus
+    et ultrices posuere cubilia Curae; Nam ac dolor augue. Pellentesque mi mi,
+    laoreet et dolor sit amet, ultrices varius risus. Nam vitae iaculis elit.
+    Aliquam mollis interdum libero. Sed sodales placerat egestas. Vestibulum ut
+    arcu aliquam purus viverra dictum vel sit amet mi. Duis nisl mauris, aliquam
+    sit amet luctus eget, dapibus in enim. Sed velit augue, pretium a sem
+    aliquam, congue porttitor tortor. Sed tempor nisl a lorem consequat, id
+    maximus erat aliquet. Sed sagittis porta libero sed condimentum. Aliquam
+    finibus lectus nec ante congue rutrum. Curabitur quam quam, accumsan id
+    ultrices ultrices, tempor et tellus.
+  </p>
+  <p>
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam congue tortor
+    eget pulvinar lobortis. Vestibulum ante ipsum primis in faucibus orci luctus
+    et ultrices posuere cubilia Curae; Nam ac dolor augue. Pellentesque mi mi,
+    laoreet et dolor sit amet, ultrices varius risus. Nam vitae iaculis elit.
+    Aliquam mollis interdum libero. Sed sodales placerat egestas. Vestibulum ut
+    arcu aliquam purus viverra dictum vel sit amet mi. Duis nisl mauris, aliquam
+    sit amet luctus eget, dapibus in enim. Sed velit augue, pretium a sem
+    aliquam, congue porttitor tortor. Sed tempor nisl a lorem consequat, id
+    maximus erat aliquet. Sed sagittis porta libero sed condimentum. Aliquam
+    finibus lectus nec ante congue rutrum. Curabitur quam quam, accumsan id
+    ultrices ultrices, tempor et tellus.
+  </p>
+  <div class="box" id="one">One</div>
+</div>
+
+<dl>
+  <div>
+    <dt>A</dt>
+    <dd>Andrew W.K.</dd>
+    <dd>Apparat</dd>
+    <dd>Arcade Fire</dd>
+    <dd>At The Drive-In</dd>
+    <dd>Aziz Ansari</dd>
+  </div>
+  <div>
+    <dt>C</dt>
+    <dd>Chromeo</dd>
+    <dd>Common</dd>
+    <dd>Converge</dd>
+    <dd>Crystal Castles</dd>
+    <dd>Cursive</dd>
+  </div>
+  <div>
+    <dt>E</dt>
+    <dd>Explosions In The Sky</dd>
+  </div>
+  <div>
+    <dt>T</dt>
+    <dd>Ted Leo &amp; The Pharmacists</dd>
+    <dd>T-Pain</dd>
+    <dd>Thrice</dd>
+    <dd>TV On The Radio</dd>
+    <dd>Two Gallants</dd>
+  </div>
+</dl>
+
+
+
+<h1>Absolute positioning</h1>
+
+<p>
+  I am a basic block level element. My adjacent block level elements sit on new
+  lines below me.
+</p>
+
+<p class="positioned">
+  By default we span 100% of the width of our parent element, and we are as tall
+  as our child content. Our total width and height is our content + padding +
+  border width/height.
+</p>
+
+<p>
+  We are separated by our margins. Because of margin collapsing, we are
+  separated by the width of one of our margins, not both.
+</p>
+
+<p>
+  inline elements <span>like this one</span> and <span>this one</span> sit on
+  the same line as one another, and adjacent text nodes, if there is space on
+  the same line. Overflowing inline elements
+  <span>wrap onto a new line if possible — like this one containing text</span>,
+  or just go on to a new line if not, much like this image will do:
+  <img src="https://mdn.github.io/shared-assets/images/examples/long.jpg" />
+</p> -->
+
+
+<div class="container">
+
+  <img src="pexels-njeromin-18981045.jpg"
+   alt="poster 1" 
+   width="300px"
+   height="300px"
+   class="image1">
+
+   <img src="pexels-matthew-montrone-230847-1324803.jpg"
+   alt="poster 2" 
+   width="300px"
+   height="300px"
+   class="image2">
+
+   <img src="pexels-njeromin-18981045.jpg"
+   alt="poster 3" 
+   width="300px"
+   height="300px"
+   class="image3">
+
+   <img src="pexels-matthew-montrone-230847-1324803.jpg"
+   alt="poster 4" 
+   width="300px"
+   height="300px"
+   class="image4">
+
+
+</div>
+
+
+<p>
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores natus voluptatibus reiciendis, nam alias nobis totam sunt delectus cumque harum dignissimos cum ullam assumenda aliquid. Cupiditate velit adipisci porro suscipit debitis? Distinctio pariatur vero natus sit repudiandae ab quod in temporibus enim voluptas illum eligendi, laboriosam similique tempora totam, aspernatur esse nemo iste deleniti minus rerum quidem dolorem. Illum ex voluptates aliquid iste error nisi quo incidunt! Facere dignissimos labore porro nesciunt. Saepe quia illo eligendi excepturi, ratione dolorem. Nostrum labore quisquam ratione dolorem animi in minima nisi, deserunt blanditiis fugit. In hic quis aperiam voluptate repellendus quidem earum porro esse commodi suscipit amet temporibus nam, ut consequatur laboriosam vel explicabo dolores eum saepe, nisi atque officia. Doloribus, laborum? Repellat laborum earum adipisci, deserunt exercitationem ratione, recusandae magnam assumenda nulla optio pariatur dignissimos tempora veniam id. Harum iste ut corporis, recusandae fuga placeat quis aliquam cum repellat ex quidem, numquam, sint exercitationem laudantium accusamus at quisquam assumenda dolore. Explicabo consequuntur illo tempora accusamus quas numquam reiciendis eos possimus eius quae ex cum, libero aut, ullam, est voluptates odio alias laudantium? Culpa natus labore reiciendis repellendus sint iste amet eum saepe illum harum accusamus iusto vel, vitae quidem ad laborum sapiente!</p>
+
+<p>
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem, ex reiciendis voluptate deserunt ipsum quod reprehenderit laboriosam iure ducimus necessitatibus consequatur similique soluta enim pariatur veritatis laborum quas provident alias, nostrum sapiente nisi quam! Voluptate magnam, adipisci ut tenetur voluptatibus at eveniet. Quaerat sint cum ducimus eveniet recusandae, fugit perferendis placeat nisi ab praesentium in, voluptatum harum inventore. Numquam, sint ipsum. Reprehenderit, voluptatibus dolore! Veritatis quidem est iste ex veniam minus temporibus ea nesciunt illo doloribus inventore vitae suscipit neque facilis, cupiditate iusto fuga ducimus assumenda nihil repudiandae corporis deleniti natus! Ad nemo consequatur vel. Beatae, necessitatibus similique alias quidem corrupti, autem consequatur dolorum quia, eveniet unde aliquid. Nam quo, itaque illo aliquam molestias nulla fugit laboriosam eos perferendis veniam qui dolorem amet ratione cupiditate nemo, repudiandae incidunt iure quae quidem enim, facilis possimus illum iusto non. Accusantium consequatur atque laboriosam voluptatum exercitationem! Corporis asperiores labore harum, ea dolore facere?</p>
+
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut mollitia soluta aperiam nihil excepturi omnis odit, repellendus ea reprehenderit aliquid eos. Tempore, laborum qui! Illum, tempore reprehenderit. Dolores, exercitationem iste voluptatum, sapiente a ipsa nostrum modi consequatur necessitatibus officia nemo repudiandae beatae! Nihil, molestiae quia facere dolores cumque saepe a voluptatem consequuntur. Asperiores, facere ea quasi maxime iste molestias! Eveniet impedit, corrupti optio animi excepturi aspernatur officia, hic perspiciatis ad quod incidunt ab error totam fugit molestiae tenetur atque. Nam corporis saepe quibusdam eum consequuntur eius necessitatibus sint quod ipsam veniam dolor voluptates fugit reiciendis voluptatem fuga illum, et molestiae quos quis cupiditate vitae esse dolorem distinctio. Nesciunt aut quia libero veniam facilis animi molestiae eaque dicta sequi! Necessitatibus eum impedit tenetur earum quia eaque possimus ipsam? Ad dolores beatae obcaecati aliquid ducimus odit sunt assumenda, quasi nihil praesentium magni officiis consequatur. Minus itaque culpa, earum modi vitae ipsum. Officia inventore neque ipsam eos totam, voluptatibus cumque unde sunt illum odio laboriosam corporis fuga maiores accusantium aliquid quibusdam distinctio autem obcaecati nostrum vitae. Officia, similique inventore! Tempora ea accusamus eligendi eaque odit, ad, consequuntur eveniet ducimus iste beatae voluptas ut nulla debitis eum enim itaque culpa asperiores, iure voluptatem veritatis hic corporis ipsum? Doloribus maiores praesentium natus voluptatem facere deserunt, labore eligendi aperiam ipsum? Ducimus magni nesciunt inventore, dicta at corporis quam? Explicabo commodi nihil iure recusandae ipsum quos perspiciatis, fuga id ducimus libero beatae doloremque minima deserunt consequuntur. Nobis quidem facere in minima amet dolorem quia laboriosam delectus cum?</p>
+
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic nisi, et aliquam illo qui cupiditate tenetur ab dolorum perspiciatis aperiam eligendi! Veniam laboriosam, voluptatibus vel magni saepe in ducimus dolore incidunt quas quo eligendi cumque distinctio accusamus vero omnis praesentium recusandae ex ipsam molestiae pariatur officia temporibus maiores consequuntur. Consequatur dolores delectus aliquam, debitis voluptate ad in! Doloremque quod saepe minus, dignissimos ipsam iste possimus illum quisquam, ipsum atque vel amet fugiat, nobis autem non odit aut. Repellat enim nobis obcaecati accusantium nam reiciendis laborum ipsa voluptates ullam in ex culpa accusamus, suscipit praesentium exercitationem, iure ducimus ratione dolores sint labore? Aut soluta voluptatum porro dignissimos harum distinctio est atque? Aut, harum tempora. Nisi corporis, officia soluta laudantium magnam explicabo!</p>
+
+<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sint, voluptatibus reiciendis! Soluta iste, vero odit quo nesciunt tempore iusto sapiente veniam recusandae vitae alias reiciendis adipisci consequuntur est. Reiciendis voluptatum repellat nesciunt! Sapiente, magni? Dignissimos distinctio quasi necessitatibus. Temporibus quia harum, sequi est placeat soluta debitis non, animi laborum illo totam ea numquam assumenda quod ad praesentium voluptatem, neque pariatur nam? Alias recusandae commodi ad ducimus explicabo molestiae voluptatum accusamus. Unde mollitia tempora ex at, laborum consectetur aspernatur. Doloremque minima blanditiis laborum quidem id doloribus consequatur accusamus beatae veritatis amet sed adipisci aliquam ut porro voluptatum consectetur voluptas laudantium, culpa repellendus voluptatibus aliquid? Laudantium vero architecto voluptatibus at exercitationem modi ea, provident impedit vel velit expedita. At debitis libero molestiae perspiciatis, consequuntur quia sunt consequatur illum dicta veniam esse pariatur culpa sapiente labore distinctio aut vitae reprehenderit ullam officia minima, id, suscipit ducimus! Nobis, iste aliquid. Nesciunt doloribus laudantium provident esse. Rem laborum, culpa unde voluptatibus cum ipsa quisquam consequatur reprehenderit possimus atque animi accusantium, commodi asperiores debitis repudiandae quos dicta velit magni tempora laboriosam iure ut natus dolor. Magni voluptates neque aut odit, veniam inventore perferendis recusandae repellendus aliquid molestias, praesentium aperiam itaque quod quasi incidunt excepturi eveniet sit modi aspernatur iste eaque. Error nam vero sequi, saepe mollitia ea natus sapiente a cupiditate! Sapiente explicabo distinctio et necessitatibus esse dolorum. Voluptates impedit nam, quis nisi optio libero doloribus consequatur labore maxime, eaque numquam commodi, voluptatem quidem illo placeat voluptatibus autem perferendis laudantium omnis facere beatae facilis blanditiis! Tempore, aspernatur ipsum ipsam porro quibusdam aperiam ut quidem vel tenetur cum neque ad, veniam commodi eveniet libero architecto recusandae earum aliquid sint voluptates, culpa quae explicabo! Aliquam eaque magnam sit!</p>
+
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero, sint corrupti placeat cum culpa officiis nemo recusandae maxime suscipit corporis. Ipsum itaque similique natus expedita. Nisi similique consequuntur blanditiis facere sequi non consectetur, quam in impedit praesentium! Minima officia reprehenderit, quis nobis magni similique debitis corporis aliquid dignissimos maxime? Sunt ipsam possimus corporis incidunt recusandae ad nihil impedit repellat, dignissimos quisquam corrupti suscipit, optio voluptate, ex et. Quis sunt quod repellendus eligendi quas eveniet quo? Recusandae repellendus, doloribus ea facere itaque totam hic vel modi dolorem praesentium mollitia dolores! Suscipit tempore similique quia quidem molestiae? Ratione tenetur doloremque iste earu</p>
+
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus eligendi natus, incidunt soluta cum delectus consectetur eos laborum. Obcaecati, ex temporibus saepe enim quia unde voluptatibus explicabo repellat, numquam illo odio animi quis laboriosam neque! Impedit, amet facere explicabo officiis nulla rem eligendi hic deserunt repellat suscipit reiciendis ullam optio cumque eos molestias est laudantium ipsam ducimus in, veniam expedita. Tempora, quos exercitationem, repellendus dolor magnam suscipit dignissimos provident, perspiciatis eos ipsam voluptas quaerat? Esse error ratione consectetur, magnam rerum natus molestias similique tempore eum impedit distinctio consequuntur eaque id aut fugiat temporibus sed atque in! Error quasi iure eligendi. Quas nam dolor exercitationem sapiente vel neque commodi dignissimos illum, veritatis, nostrum possimus soluta nobis libero culpa, expedita voluptatibus natus voluptatem minus. Eaque, iste id, dolores magnam saepe natus aperiam ipsam reiciendis aliquid, ducimus commodi tempora esse possimus accusantium similique accusamus iusto repellendus consequatur expedita a in laborum tempore beatae. Blanditiis provident quo corrupti consequatur doloremque perferendis in pariatur deserunt nesciunt fugiat quidem repellat necessitatibus quasi sint ex sit recusandae eos porro, eius nemo nostrum iure voluptatibus alias! Facere, eos! Molestias tempora a eaque quia incidunt iure? Maxime consequatur veritatis quam nemo accusantium porro cum esse odit, et numquam officia!</p>
+    
+</body>
+</html>
