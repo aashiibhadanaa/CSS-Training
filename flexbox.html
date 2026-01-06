@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FlexBox</title>
+    <style>
+        .container{
+            background-color: beige;
+            border: 2px solid black;
+            margin: 2px;
+            padding: 2px;
+            display: flex;
+            height: 1200px;
+
+             justify-content: start;
+            /* justify-content: end;
+            justify-content: space-between;
+            justify-content: space-around;  */
+            /* justify-content: space-evenly; */
+            text-align: center;
+
+            align-items: start;
+            align-content: center;
+            /* align-content: end;
+            align-content: center; */
+            /* align-items: end;
+            align-items: start;
+            align-items: stretch; */
+
+            flex-direction: row;
+            /* flex-direction: row;
+            flex-direction: column-reverse;
+            flex-direction: row-reverse;  */
+
+            /* flex-wrap: wrap; */
+            
+            /* flex-wrap: nowrap;
+            flex-wrap: wrap-reverse; */
+
+            /* flex-flow: column;
+            flex-flow: row;
+            flex-flow: column-reverse;
+            flex-flow: row-reverse;
+            flex-flow: wrap;
+            flex-flow: wrap-reverse;
+            flex-flow: row wrap;
+            flex-flow: column wrap; */
+            
+            
+        }
+
+        .box{
+            /* width: 200px;
+            height: 200px; */
+            margin: 2px;
+            padding: 2px;
+            border: 1px solid black;
+        }
+
+        #box1{
+            background-color: aqua;
+            /* order: 5; */
+            /* flex-shrink: 4; */
+            /* flex-grow: 5; */
+            /* flex-grow: 1; */
+            align-self: center;
+        }
+
+        #box2{
+            background-color: blue;
+              /* flex-grow: 1; */
+              align-self: end;
+        }
+
+        #box3{
+            background-color: orange;
+              /* flex-grow: 1; */
+        }
+
+        #box4{
+            background-color: brown;
+            /* order: -1; */
+              /* flex-grow: 1; */
+              /* flex-basis: 400px; */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box" id="box1">Box A</div>
+        <div class="box" id="box2">Box B</div>
+        <div class="box" id="box3">Box C</div>
+        <div class="box" id="box4">Box D</div>
+    </div>
+</body>
+</html>
