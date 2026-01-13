@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shadow Effect</title>
+    <style>
+        img{
+            width: 150px;
+        }
+        .container{
+            background-color: #cccccc;
+            height: 650px;
+            border: 2px solid black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .box{
+            background-color: #777;
+            width: 330px;
+            height: 330px;
+            border: 2px solid black;
+            margin: 5px;
+            padding: 5px;
+             box-shadow: 10px 10px 20px 40px brown;          /* 3rd value is for blur radius and 4th value is for spread radius */
+
+            /* box-shadow: 10px 10px black; */
+            /* box-shadow: -10px -20px black; */
+            /* box-shadow: 10px -15px black; */
+            /* box-shadow: 20px 20px green, 30px 30px aquamarine; */
+                                                               /* negative value is used to shift the shadow to left and top */
+                                                               /* positive value is used to shift the shadow to right and bottom */
+        }
+
+        /* we can use variable in css inside the class or by using :root selector */
+        /* like this :root{--primary-color: brown; 
+                        --custom-width: 10px;
+        }
+        .box{
+             box-shadow: 10px 10px 20px 40px var(--primary-color); } */
+
+             #head1{
+                /* text-shadow: 2px 2px 2px #f1f1f1; */
+                /* text-shadow: brown 2px 2px; */
+                /* text-shadow: yellow 2px 2px 2px; */
+                text-shadow: 2px 2px;
+             }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            <img src="Mihir Bhoj.jpg" alt="Image">
+            <h1 id="head1">Samrat Mihir Bhoj</h1>
+            <p>Gurjar Samrat Mihir Bhoj (c. 836-885 CE) was a powerful ruler of the Gurjara-Pratihara Dynasty, expanding his vast empire across North India and safeguarding it from Arab incursions, reaching its zenith under his rule.</p>
+        </div>
+    </div>
+</body>
+</html>

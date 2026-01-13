@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation</title>
+    <style>
+        body{
+            text-align: justify;
+        }
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .container{
+            width: 100vw;
+            height: 100vh;
+            background-color: bisque;
+            border: 5px solid black;
+        }
+        .box{
+            width: 300px;
+            height: 80px;
+            background-color: blue;
+            /* border: 3px solid black; */
+            border-radius: 10px;
+            margin: 20px;
+            position: relative;
+            animation-name: rightMovement;
+            animation-duration: 4s;
+            animation-iteration-count: infinite;
+            /* animation-delay: 1s; */
+            animation-timing-function: linear;
+            animation-direction: alternate;
+            /* animation-fill-mode: forwards; */
+
+        }
+
+        @keyframes rightMovement {
+            from {
+                top: 0;
+                left: 0;
+            } 
+
+            to {
+                top: 0;
+                left: 1180px;
+            }
+        }
+
+        #box1{
+            width: 300px;
+            height: 80px;
+            background-color: blue;
+            /* border: 3px solid black; */
+            border-radius: 10px;
+            margin: 20px;
+            position: relative;
+            animation-name: leftMovement;
+            animation-duration: 4s;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;
+            animation-direction: alternate;
+        }
+
+        
+        @keyframes leftMovement {
+            from {
+                top: 380px;
+                left: 1180px;
+            } 
+
+            to {
+                top: 380px;
+                left: 0;
+            }
+        }
+
+        #circle{
+            width: 50px;
+            height: 50px;
+            background-color: blue;
+            border: 3px solid blue;
+            border-radius: 50px;
+            margin: 10px;
+            position: relative;
+            top: 30%;
+            left: 45%;
+            animation: 10s ease-in-out 0s infinite alternate-reverse none running circleMovement;
+        }
+
+         @keyframes circleMovement {
+           0%{
+            top: 1%;
+            left: 5%;
+
+           }
+
+           30%{
+            top: 5%;
+            left: 90%;
+
+           }
+
+           60%{
+            top: 70%;
+            left: 10%;
+
+           }
+
+           100%{
+            top: 60%;
+            left: 90%;
+
+           }
+
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box"></div>
+         <div id="circle"></div>
+        <div id="box1"></div>
+       
+    </div>
+
+    <h1>Welcome to Codehelp</h1>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum, ab aperiam. Possimus ducimus natus excepturi, dolorum nulla cupiditate quas quia laborum dicta vitae tempora labore animi soluta dignissimos et nihil culpa illum? Magni eius, alias fugiat accusantium eveniet ex quos saepe nihil beatae reiciendis officiis molestias aliquam, unde dignissimos praesentium. Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic et accusamus consequuntur ea quae similique earum nam, neque sunt facere quis error quibusdam magnam blanditiis incidunt cupiditate voluptatem! Quas maxime nihil cum enim dolor minima, cupiditate veniam voluptatem? Ipsa molestias earum non laborum voluptate labore accusamus, voluptatum dolor velit optio ipsam natus! Beatae dolor harum placeat obcaecati, perspiciatis praesentium ipsa, quisquam esse aspernatur blanditiis nesciunt in? Perferendis ipsum ab, facilis labore possimus placeat. Commodi, amet.</p>
+
+    <h2>Welcome to Codehelp 2.0</h2>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit fugit sequi dolore facere? Nisi, molestiae possimus quibusdam saepe porro nemo in consectetur est iusto facere aliquam doloribus voluptatum sed quasi omnis praesentium accusantium dicta qui sint accusamus tempore! Nisi voluptate ex ab modi rem repellendus ad vel odio facilis non! Asperiores, magni. Nulla ducimus labore voluptatem praesentium pariatur optio unde nobis in fugiat sint alias cum accusamus sit aperiam tenetur, nostrum facilis blanditiis adipisci quidem minima! Tempore porro necessitatibus, facere nemo repudiandae delectus commodi officiis? Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere veritatis, dignissimos quas aliquid quasi veniam provident? Exercitationem id, esse veniam, quas nulla commodi, suscipit accusantium facere numquam temporibus debitis ab possimus saepe at. Tempora esse quis voluptas. Repellat magnam eos, quaerat facere provident natus hic accusantium modi sed aperiam suscipit quidem reprehenderit nisi ratione obcaecati sit possimus velit fuga? Quis velit adipisci vel eligendi alias, est aspernatur dolore quo fuga? Necessitatibus fuga est sequi saepe?</p>
+
+    <h2>Welcome to Codehelp 3.0</h2>
+
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Expedita culpa aliquid consequatur est placeat laborum corporis, dolor saepe adipisci? Itaque a, esse pariatur hic obcaecati sint dicta ut iusto quae? Eveniet voluptatum veniam atque doloribus repellat sequi. Voluptas temporibus aut similique aliquid eaque doloremque facere minima at magnam nobis excepturi iste, alias velit possimus minus impedit? Nisi est excepturi maiores, sequi sunt harum explicabo ab optio distinctio voluptas repudiandae consectetur quisquam vel aspernatur quos fuga. Voluptates quis alias porro maxime, quasi vitae labore ullam corrupti reprehenderit nulla quam voluptatem aliquid accusantium inventore consectetur perspiciatis. Fugit, cumque praesentium? Modi deleniti, explicabo fugit aperiam porro tempore! Iste nesciunt voluptatum sequi praesentium minus, magnam est temporibus! Quam, doloremque. Cumque nostrum ea deserunt sequi, excepturi architecto non laudantium sunt soluta eligendi eveniet nemo praesentium. Fugiat totam pariatur cum ex reiciendis ipsam error minus rem eligendi. Sapiente, cum ex soluta facere at illo nulla inventore. Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos officiis consectetur unde. Iure illum optio id eum laudantium cupiditate aspernatur molestias officia nam nemo error delectus eaque, ducimus quibusdam quos quisquam magni minus consectetur odio consequuntur voluptatibus. Iste facere quisquam voluptates culpa, recusandae dignissimos provident quis ullam sapiente reprehenderit ut omnis obcaecati iure nisi dolores dolorum pariatur. Ad recusandae accusantium, magni aspernatur sint deleniti ratione alias voluptates ut in, animi odio. Ad dolor rem sint?</p>
+
+    <h2>Welcome to Codehelp 4.0</h2>
+
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Blanditiis unde quae amet ipsam eveniet repellendus accusantium dolore autem temporibus reiciendis, libero omnis! Rerum ullam inventore nulla aliquam voluptatum illo excepturi tempora vel suscipit neque? Dolor animi fugiat consectetur quo! Quisquam harum quis sint vitae omnis asperiores possimus cumque consequuntur a quidem quas rerum dolorem officiis, maxime exercitationem nostrum aspernatur neque quibusdam quam! Deleniti numquam vitae neque eos reiciendis dolores natus? Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio nam expedita molestias est corporis nisi tempore vero ipsum repellat at modi debitis quam nesciunt doloribus, eius quod ad voluptates inventore reprehenderit exercitationem quas quia aperiam minus voluptatem. Natus alias tempore quisquam aliquid eligendi sapiente ut quos tenetur. Pariatur, eius eligendi? Laborum placeat maxime molestias totam eius rem aut excepturi necessitatibus consequatur hic, id perferendis unde similique. Incidunt nam sed in, illum dignissimos modi sint quos!</p>
+
+    <h2>Welcome to Codehelp 5.0</h2>
+
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corporis, consequatur id aperiam ratione sed quasi, nulla officia numquam molestiae delectus at consequuntur, maxime blanditiis. Porro voluptates corrupti nobis, facere doloremque ab veritatis sint natus molestias ea facilis eligendi aliquam suscipit, dicta harum. Tempore nobis eveniet hic saepe? A placeat soluta ea, obcaecati fugiat minima esse eligendi aliquid quod eaque reprehenderit adipisci enim minus autem quam officiis rerum quo ipsa voluptates architecto possimus accusantium odio nulla. Optio illum veniam, itaque accusantium accusamus fuga, quis quidem et quaerat praesentium sunt dolorum fugiat in sapiente cumque cum illo pariatur esse dolorem eos, alias nihil natus? Impedit quis maxime reprehenderit porro alias molestias error quibusdam, amet, voluptatibus tenetur odio optio harum dolorum? Nesciunt culpa beatae voluptas odio sed ipsum, dolorem distinctio doloribus a ratione impedit ut sapiente optio aliquid esse expedita numquam reprehenderit error suscipit consequatur, quidem illo doloremque labore magni. Inventore nostrum labore adipisci consequuntur aspernatur aliquam porro ut incidunt a tempore harum iure, numquam blanditiis eaque commodi dignissimos totam ea necessitatibus consequatur! Itaque delectus quos nemo nihil dolorum velit, soluta distinctio commodi corrupti illo, ipsum corporis perspiciatis assumenda. Obcaecati est explicabo optio perferendis officia quo cum. Cupiditate minima ducimus obcaecati ab numquam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis, quam. Recusandae voluptas itaque voluptatem natus voluptatum repellat nulla modi in eius, dolorem sit aut officia vero blanditiis impedit, quidem id necessitatibus. Sunt laborum illum molestias quaerat magni, modi quo consequatur odio. Eligendi, obcaecati qui amet officia architecto rerum. Aut iusto porro omnis incidunt officiis voluptas, dolore earum cumque nemo optio expedita blanditiis ad reiciendis! Sint dolores repellendus mollitia temporibus blanditiis deleniti laborum quae asperiores tenetur?</p>
+
+    <h2>Welcome to Codehelp 6.0</h2>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus vero inventore dolorum itaque numquam iusto et aliquid asperiores officia, quo, nisi, perspiciatis eligendi eaque temporibus! Corrupti laudantium enim voluptatum, fuga labore vero accusamus. Repellendus corrupti, facere incidunt omnis sint aspernatur necessitatibus, minima blanditiis autem nisi odio numquam. Sint nisi necessitatibus nostrum quas dignissimos rerum veniam recusandae alias! Dolor expedita dignissimos ipsa pariatur accusamus libero aliquam at ipsum repudiandae ipsam. Vel veritatis praesentium incidunt labore sint adipisci aut neque debitis? Sit odio nobis error necessitatibus expedita iste veritatis debitis quod reprehenderit ut atque, consequatur ad incidunt at illo rem tenetur voluptate fugiat? Vel odio corrupti reprehenderit in! Porro earum natus, impedit et nisi atque esse? Assumenda laborum inventore dignissimos optio ullam? Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium perspiciatis, maiores odit labore laboriosam corrupti molestiae vel nemo dolor optio repudiandae earum possimus nesciunt quae hic nobis voluptatibus suscipit totam! Delectus accusantium quasi ratione, provident optio sint impedit minus? Nam vel sint facere. Nemo nulla qui repellendus rem fugit reiciendis eum accusantium a expedita eaque consectetur pariatur modi delectus itaque, facere est quibusdam natus laborum repudiandae. Ex illum quod doloremque necessitatibus assumenda pariatur accusamus natus.</p>
+
+
+</body>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practice</title>
+    <style>
+        body{
+            background-color: #cccccc;
+        }
+        .container{
+            border: 2px solid black;
+            background-color: bisque;
+            display: flex;
+            flex-direction: row;
+            width: 450px;
+             margin: 10px;
+            padding: 2px;
+        }
+        #boxleft{
+            background-color: aquamarine;
+            border: 1px solid blue;
+            width: 43%;
+            margin: 3px;
+            padding: 2px;
+            display: flex;
+            flex-direction: column;
+        }
+
+        #boxright{
+            background-color: yellow;
+            border: 1px solid brown;
+            width: 43%;
+             margin: 3px;
+            padding: 2px;
+        }
+        p{
+            border: 1px solid red;
+        }
+        @media (max-width: 640px) {
+            .container{
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div id="boxleft">
+            <p> Mihira Bhoja (836-885 CE) or Bhoja I was a ruler of the Gurjara-Pratihara dynasty of India. He succeeded his father Ramabhadra.</p>
+            <p> The origin of the Gurjara-Pratihara dynasty of India is a topic of debate among historians.</p>
+        </div>
+        <div id="boxright">
+            <img src="Mihir Bhoj1.jpg" alt="Gurjar Samrat Mihir Bhoj">
+        </div>
+    </div>
+</body>
+</html>
