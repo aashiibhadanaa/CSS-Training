@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Insight Card</title>
+  <style>
+   /* =====================
+   GLOBAL RESET
+===================== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+  background: #2e5c6e;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* =====================
+   CARD WRAPPER
+===================== */
+.card-wrapper {
+  width: 900px;
+  height: 380px;
+  display: flex;
+  overflow: hidden;
+  background: linear-gradient(to right, #4b0055 50%, #0b0d2c 50%);
+}
+
+/* =====================
+   LEFT SECTION
+===================== */
+.card-left {
+  width: 50%;
+  padding: 40px;
+  color: #ffffff;
+}
+
+.card-left h2 {
+  font-size: 26px;
+  margin-bottom: 20px;
+  line-height: 1.3;
+}
+
+.card-left p {
+  font-size: 14px;
+  line-height: 1.6;
+  opacity: 0.8;
+  margin-bottom: 40px;
+}
+
+.stats {
+  display: flex;
+  gap: 40px;
+}
+
+.stats h3 {
+  font-size: 22px;
+}
+
+.stats span {
+  font-size: 12px;
+  opacity: 0.7;
+}
+
+/* =====================
+   RIGHT SECTION
+===================== */
+.card-right {
+  width: 50%;
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
+}
+
+.card-right img {
+  width: 450px;
+  height: 380px;
+  /* filter: drop-shadow(0 20px 40px rgba(0,0,0,0.4)); */
+}
+
+/* ==================================================
+   TABLET RESPONSIVE (max-width: 900px)
+================================================== */
+@media (max-width: 900px) {
+  body {
+    padding: 20px;
+    height: auto;
+  }
+
+  .card-wrapper {
+    width: 100%;
+    height: auto;
+  }
+
+  .card-left {
+    padding: 30px;
+  }
+
+  .card-left h2 {
+    font-size: 22px;
+  }
+
+  .stats {
+    gap: 25px;
+  }
+
+  .card-right img {
+    width: 220px;
+  }
+}
+
+/* ==================================================
+   MOBILE RESPONSIVE (max-width: 600px)
+================================================== */
+@media (max-width: 600px) {
+  .card-wrapper {
+    flex-direction: column;
+    background: linear-gradient(to bottom, #4b0055 50%, #0b0d2c 50%);
+  }
+
+  .card-left,
+  .card-right {
+    width: 100%;
+    text-align: center;
+  }
+
+  .card-left {
+    padding: 30px 20px;
+  }
+
+  .card-left h2 {
+    font-size: 20px;
+  }
+
+  .card-left p {
+    font-size: 13px;
+    margin-bottom: 25px;
+  }
+
+  .stats {
+    justify-content: center;
+    gap: 20px;
+  }
+
+  .stats h3 {
+    font-size: 18px;
+  }
+
+  .card-right {
+    padding: 20px 0 30px;
+  }
+
+  .card-right img {
+    width: 200px;
+  }
+}
+
+/* ==================================================
+   EXTRA SMALL DEVICES (max-width: 400px)
+================================================== */
+@media (max-width: 400px) {
+  .card-left h2 {
+    font-size: 18px;
+  }
+
+  .stats {
+    flex-direction: column;
+    gap: 15px;
+  }
+}
+
+
+  </style>
+</head>
+<body>
+
+  <div class="card-wrapper">
+    <!-- Left Section -->
+    <div class="card-left">
+      <h2>Get insights that help<br>your business grow</h2>
+
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        Adipisci ipsum odit atque accusantium totam repellendus
+        minus sit. Consequuntur, deleniti dignissimos?
+      </p>
+
+      <div class="stats">
+
+        <div>
+          <h3>10K+</h3>
+          <span>Companies</span>
+        </div>
+
+
+        <div>
+          <h3>214</h3>
+          <span>Paid Users</span>
+        </div>
+
+
+        <div>
+          <h3>12M+</h3>
+          <span>Views</span>
+        </div>
+
+
+      </div>
+
+    </div>
+
+    <!-- Right Section -->
+    <div class="card-right">
+      <img src="card1.png" alt="Illustration">
+    </div>
+  </div>
+
+</body>
+</html>
